@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: 'Testing github actions'
+inputs:
+  who-to-greet: # input id
+    description: 'Who the action should greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # output id
+    description: "The time the action greeted"
+runs:
+  using: 'node16'
+  main: 'index.js'
